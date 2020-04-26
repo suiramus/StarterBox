@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Accordion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body>
+
+
+<div class="accordion">
+
+	<h3 class="acc-title acc-active">What is HTML</h3>
+	<div class="acc-content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur quisquam molestiae, sapiente odio quod, optio vitae repudiandae, facere tenetur sit expedita? Quibusdam, expedita!</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolor sapiente necessitatibus aut natus itaque quia sint iure maxime cum.</p>
+	</div>
+
+	<h3 class="acc-title">CSS or Cascading Style Sheet. A very, very long title</h3>
+	<div class="acc-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur quisquam molestiae, sapiente odio quod, optio vitae repudiandae, facere tenetur sit expedita? Quibusdam, expedita!
+	</div>
+
+	<h3 class="acc-title">PHP is the king of programming</h3>
+	<div class="acc-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur quisquam molestiae, sapiente odio quod, optio vitae repudiandae, facere tenetur sit expedita? Quibusdam, expedita!</div>
+
+	<h3 class="acc-title">Why we need a database?</h3>
+	<div class="acc-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur quisquam molestiae, sapiente odio quod, optio vitae repudiandae, facere tenetur sit expedita? Quibusdam, expedita!</div>
+
+</div><!-- accordion -->
+
+
+
+<script>
+	var acc = document.getElementsByClassName("acc-title");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("acc-active");
+			// if (this.classList.contains("acc-active")) {
+			// 	this.classList.remove("acc-active");
+			// 	// this.nextElementSibling.classList.toggle("acc-content-active");
+			// } else {
+			// 	this.classList.add("acc-active");
+			// 	// this.nextElementSibling.classList.toggle("acc-content-active");
+			// }
+		});
+	}
+</script>
+
+</body>
+</html>

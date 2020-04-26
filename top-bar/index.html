@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flexbox Responsive Menu 2020</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" media="screen" href="style.css">
+</head>
+<body>
+
+
+<header id="header">
+	
+	<div id="top-nav">
+
+		<div id="logo">
+			<a href="#">FlashWeb Co.</a>
+		</div><!-- logo -->
+
+		<div id="hamburger" onclick="menuFunction(this)">
+		</div><!-- #hamburger -->
+
+		<div id="menu">
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li class="has-submenu"><a href="#">Products</a>
+					<ul>
+						<li><a href="#">HTML Templates</a></li>
+						<li><a href="#">Wordpress Themes</a></li>
+						<li><a href="#">CSS Grid</a></li>
+						<li><a href="#">Responsive Menus</a></li>
+					</ul>
+				</li>
+				<li class="has-submenu"><a href="#">Services</a>
+					<ul>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Hosting</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div><!-- #menu -->
+
+	</div><!-- top-nav -->
+
+</header><!-- header -->
+
+<div class="content">
+	<h2>Responsive Menu</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos numquam maxime consequuntur? Quod quisquam a, placeat, temporibus sapiente eaque nisi?</p>
+</div><!-- content -->
+
+
+<script>
+	function menuFunction(x) {
+		var menu = document.getElementById('menu');
+		x.classList.toggle("ham-close");
+		menu.classList.toggle("menu-open");
+	}
+</script>
+
+</body>
+</html>

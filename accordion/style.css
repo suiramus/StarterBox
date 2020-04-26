@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #232323;
+}
+
+p:not(:first-child) {
+	margin-top: 16px;
+}
+
+.accordion {
+	max-width: 800px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+.acc-title {
+	display: block;
+	padding: 10px 50px 10px 20px;
+	background: rgba(255, 234, 111,.9);
+	position: relative;
+	cursor: pointer;
+	transition: background .3s;
+}
+
+.acc-title:hover {
+	background: rgba(255, 234, 111,1);
+}
+
+.acc-title:not(:first-child) {
+	margin-top: 12px;
+}
+
+.acc-title:after {
+	content: "\002B"; /* Plus sign */
+	display: inline-block;
+	padding: 10px 20px;
+	right: 0;
+	top: 0;
+	position: absolute;
+	background: rgba(0,0,0,.02);
+}
+
+.acc-title.acc-active:after {
+	content: "\2212"; /*Minus sign*/
+}
+
+.acc-content {
+	display: none;
+	background: rgba(255, 234, 111,.06);
+	border: 1px solid rgba(255, 234, 111,.6);
+	padding: 20px;
+}
+
+.acc-active + .acc-content {
+	display: block;
+}
+
+.acc-content img {
+	color: red;
+}
