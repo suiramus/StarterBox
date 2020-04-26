@@ -1,5 +1,6 @@
 # StarterBox
  HTML and CSS Templates
  
- suiramus.github.io/accordion
+https://suiramus.github.io/StarterBox/accordion
+https://suiramus.github.io/StarterBox/top-bar
  
