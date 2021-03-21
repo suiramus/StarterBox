@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Swiper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" media="screen" href="swiper-bundle.min.css">
+<style>
+	html,
+	body {
+		position: relative;
+		height: 100%;
+	}
+
+	body {
+		background: #eee;
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+
+	.swiper-container {
+		width: 100%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+
+		/* Center slide text vertically */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide {
+		background-image: linear-gradient(#333, #676767);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.swiper-button-next, .swiper-button-prev {
+		color: #FFF;
+	}
+
+	.swiper-pagination-bullet {
+	    width: 10px;
+	    height: 10px;
+	    display: inline-block;
+	    border-radius: 50%;
+	    background: #000;
+	    opacity: .5;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #FFF;
+	}
+</style>
+</head>
+<body>
+
+	<!-- Swiper -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" style="background-image: url('images/wedding.jpg');">
+				<h1>Wedding Photography</h1>
+			</div>
+			<div class="swiper-slide" style="background-image: url('images/christening.jpg');">Slide 2</div>
+			<div class="swiper-slide" style="background-image: url('images/model.jpg');">Model</div>
+
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+
+	<div class="content">
+		<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Veritatis corporis ratione harum error laudantium esse ipsam qui porro enim dignissimos. Alias, quas expedita sint obcaecati est sed ducimus illum doloremque accusantium molestiae esse ipsa qui dolorum consectetur nesciunt possimus minima deleniti veritatis eius adipisci aliquid doloribus sit. Blanditiis officia dicta, quas consequuntur, beatae doloribus impedit, dolore atque explicabo ut quasi voluptates ex est ratione veritatis accusantium minima veniam. Omnis nesciunt, saepe, atque officia magni tenetur. Dignissimos voluptas harum quidem ea veritatis sunt, nesciunt facilis assumenda voluptatum aspernatur earum, nulla omnis, in odit soluta. Maiores, explicabo? Sint architecto, modi eos quas tenetur eius ab delectus ipsum, odio qui illo nihil nesciunt error nobis inventore similique voluptatibus vero aut facere. Esse dicta porro tenetur, quo ducimus recusandae, incidunt tempore beatae fugit id provident, deserunt cupiditate quidem explicabo veniam autem? Maxime ut praesentium et, blanditiis adipisci. Incidunt eos repellat at, accusantium labore laborum, temporibus neque doloribus, vel nostrum architecto repudiandae ab aut consectetur ullam voluptatum, in quidem? Similique sit, repellendus dolorem libero nam sequi dolores ab praesentium impedit, veniam eum sint, ex eaque cum quod voluptatem quibusdam vitae rerum ipsum maiores hic distinctio, suscipit! Odit, recusandae quisquam. Nostrum ducimus aliquid autem, provident at?</p>
+	</div>
+
+
+<!-- Swiper JS -->
+<script src="swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		// effect: 'fade',
+		speed: 500,
+		spaceBetween: 0,
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: true,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+		},
+	});
+</script>
+
+</body>
+</html>
