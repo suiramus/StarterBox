@@ -37,6 +37,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
 }
 
 #logo a {
@@ -45,18 +46,18 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	line-height: 40px;
-	padding: 20px;
+	padding: 10px 20px;
 	color: var(--top-nav-link-color);
 }
 
 #hamburger {
-	width: 40px;
-	height: 40px;
+	width: 36px;
+	height: 36px;
 	background-image: url('svg/menu-ham.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 40px;
-	margin: 20px;
+	background-size: 36px;
+	margin: 10px;
 	cursor: pointer;
 	transform: scale(.9,.9);
 	transition: all .3s;
@@ -148,7 +149,7 @@ body {
 
 	#menu > ul li a {
 		display: inline-block;
-		padding: 20px 16px;
+		padding: 10px 16px;
 		line-height: 40px;
 	}
 
